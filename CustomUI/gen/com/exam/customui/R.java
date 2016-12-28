@@ -34,47 +34,77 @@ public final class R {
     public static final class drawable {
         public static final int back1=0x7f020000;
         public static final int back2=0x7f020001;
-        public static final int fanhui=0x7f020002;
-        public static final int firstpage_selector=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int login_bt_shape=0x7f020005;
-        public static final int login_shape=0x7f020006;
-        public static final int shouye1=0x7f020007;
-        public static final int shouyesl2=0x7f020008;
-        public static final int userset_selector=0x7f020009;
-        public static final int wode1=0x7f02000a;
-        public static final int wodesl2=0x7f02000b;
+        public static final int f2f5=0x7f020002;
+        public static final int fanhui=0x7f020003;
+        public static final int firstpage_selector=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int login_bt_shape=0x7f020006;
+        public static final int login_shape=0x7f020007;
+        public static final int resouse200=0x7f020008;
+        public static final int shouye1=0x7f020009;
+        public static final int shouyesl2=0x7f02000a;
+        public static final int userset_selector=0x7f02000b;
+        public static final int wode1=0x7f02000c;
+        public static final int wodesl2=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000d;
-        public static final int iv_headerview_left=0x7f09000a;
-        public static final int iv_headerview_right=0x7f09000c;
+        public static final int action_settings=0x7f090012;
+        public static final int firstpage_meet=0x7f09000c;
+        public static final int firstpage_vote=0x7f09000b;
+        public static final int headerView=0x7f09000a;
+        public static final int iv_headerview_left=0x7f09000f;
+        public static final int iv_headerview_right=0x7f090011;
         public static final int loginButton=0x7f090005;
         public static final int loginbackground1=0x7f090000;
         public static final int loginpasswardEdit=0x7f090004;
         public static final int loginpasswardlayout=0x7f090003;
         public static final int loginuserEdit=0x7f090002;
         public static final int loginuserlayout=0x7f090001;
+        public static final int myset_usermessage=0x7f09000d;
+        public static final int myset_userquit=0x7f09000e;
         public static final int rb_main_MySet=0x7f090009;
         public static final int rb_main_firstPage=0x7f090008;
         public static final int rg_main_radiogroup=0x7f090007;
-        public static final int tv_headerview_title=0x7f09000b;
+        public static final int tv_headerview_title=0x7f090010;
         public static final int vp_main_viewpager=0x7f090006;
     }
     public static final class layout {
-        public static final int activity_login=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int navigation=0x7f030002;
+        public static final int activity_current_previous=0x7f030000;
+        public static final int activity_login=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_meet=0x7f030003;
+        public static final int activity_user_message=0x7f030004;
+        public static final int fragment_first=0x7f030005;
+        public static final int fragment_myset=0x7f030006;
+        public static final int navigation=0x7f030007;
     }
     public static final class menu {
-        public static final int login=0x7f080000;
-        public static final int main=0x7f080001;
+        public static final int current_previous=0x7f080000;
+        public static final int home=0x7f080001;
+        public static final int login=0x7f080002;
+        public static final int main=0x7f080003;
+        public static final int meet=0x7f080004;
+        public static final int user_message=0x7f080005;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
+        public static final int activity_meet_text=0x7f060009;
+        public static final int activity_user_message=0x7f06000a;
         public static final int app_name=0x7f060000;
+        public static final int hello_blank_fragment=0x7f060008;
         public static final int hello_world=0x7f060001;
+        public static final int title_activity_current_previous=0x7f060004;
+        public static final int title_activity_fragment=0x7f060011;
+        public static final int title_activity_home=0x7f060007;
         public static final int title_activity_login=0x7f060003;
+        public static final int title_activity_meet=0x7f060005;
+        public static final int title_activity_user_message=0x7f060006;
+        public static final int xlistview_footer_hint_normal=0x7f06000f;
+        public static final int xlistview_footer_hint_ready=0x7f060010;
+        public static final int xlistview_header_hint_loading=0x7f06000d;
+        public static final int xlistview_header_hint_normal=0x7f06000b;
+        public static final int xlistview_header_hint_ready=0x7f06000c;
+        public static final int xlistview_header_last_time=0x7f06000e;
     }
     public static final class style {
         /** 

@@ -5,7 +5,8 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <android.support.v4.view.ViewPager
+
+   <android.support.v4.view.ViewPager
         android:id="@+id/vp_main_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -18,7 +19,7 @@
     <RadioGroup
         android:id="@+id/rg_main_radiogroup"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="horizontal" >
 
         <RadioButton
@@ -30,9 +31,10 @@
             android:checked="true"
             android:text="首页"
             android:textColor="@color/rb_textcolor_selector"
-              android:gravity="center"
+            android:textSize="13sp"
+            android:gravity="center"
             android:drawableTop="@drawable/firstpage_selector"
-            android:paddingTop="8dp" />
+            android:paddingTop="1dp" />
 
         <RadioButton
             android:id="@+id/rb_main_MySet"
@@ -42,10 +44,14 @@
             android:button="@null"
             android:drawableTop="@drawable/userset_selector"
             android:gravity="center"
-            android:paddingTop="8dp"
+            android:paddingTop="1dp"
             android:text="个人中心"
+            android:textSize="13sp"
             android:textColor="@color/rb_textcolor_selector" />
+        
 
-    </RadioGroup>
+    </RadioGroup> 
+
+  
 
 </LinearLayout>
