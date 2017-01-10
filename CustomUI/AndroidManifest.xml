@@ -45,6 +45,18 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home" >
         </activity>
+        <activity
+            android:name=".VoteExplainActivity"
+            android:label="@string/title_activity_vote_explain" >
+        </activity>
+        <activity
+            android:name=".VoteSelectActivityActivity"
+            android:label="@string/title_activity_vote_select_activity" >
+        </activity>
+        <activity
+            android:name=".VoteSelectActivity"
+            android:label="@string/title_activity_vote_select" >
+        </activity>
     </application>
 
 </manifest>

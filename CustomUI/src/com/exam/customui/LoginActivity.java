@@ -1,15 +1,22 @@
 package com.exam.customui;
 
+import com.exam.util.NetUtil;
+import com.exam.customui.LoginActivity;
+import com.exam.customui.MainActivity;
+import com.exam.listener.OnLoginFinishListener;
+import com.exam.util.HttpUtil;
+
 import android.app.Activity;
-
-
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 public class LoginActivity extends Activity {
 
@@ -37,11 +44,41 @@ public class LoginActivity extends Activity {
 	
 	public void loginIn(View view) {
 		// TODO Auto-generated method stub
-		//1.暂时先无网络请求
+
+		if(TextUtils.isEmpty(etUserName.getText())||TextUtils.isEmpty(etPassword.getText())){
+			Toast.makeText(this, "请输入用户名或密码", 1).show();
+			return;
+		}
 		
-		Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-		startActivity(intent);
-		finish();
+		if(!NetUtil.isNetworkAvailable(this)){
+			Toast.makeText(this, "当期网络不可用", 1).show();
+			
+			return;
+		}
+
+		HttpUtil.login(String.valueOf(etUserName.getText()), String.valueOf(etPassword.getText()), new OnLoginFinishListener() {
+
+			@Override
+			public void onLoginFinish(int status) {
+				
+				if(status==1){
+					
+					Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+					startActivity(intent);
+					finish();
+				
+				}else if(status==0){
+					AlertDialog.Builder builder=new AlertDialog.Builder(LoginActivity.this);
+					builder.setIcon(android.R.drawable.ic_menu_info_details)
+					.setTitle("����")
+					.setMessage("��¼ʧ��")
+					.setNegativeButton("ȷ��", null).create().show();
+				}
+			}
+		});
+		
+		
+		
 	}
 	
 
