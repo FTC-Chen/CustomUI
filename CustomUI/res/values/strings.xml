@@ -22,5 +22,6 @@
     <string name="title_activity_vote_explain">VoteExplainActivity</string>
     <string name="title_activity_vote_select_activity">VoteSelectActivityActivity</string>
     <string name="title_activity_vote_select">VoteSelectActivity</string>
+    <string name="title_activity_candidate">CandidateActivity</string>
 
 </resources>

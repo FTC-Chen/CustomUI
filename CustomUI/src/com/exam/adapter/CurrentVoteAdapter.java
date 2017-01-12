@@ -42,8 +42,8 @@ public class CurrentVoteAdapter extends MyBaseAdapter<CurrentVote.Data> {
 		Data data=getItem(position);
 		Log.d("TAG", position+"");
 		vh.tvTitle.setText(data.getSubject());
-		vh.tvCreateTime.setText("开始时间"+data.getCreateDate());
-		vh.tvEndTime.setText("结束时间"+data.getDeadline());
+		vh.tvCreateTime.setText("开始时间:"+data.getCreateDate());
+		vh.tvEndTime.setText("结束时间:"+data.getDeadline());
 
 			if(data.isHasVoted()){
 				vh.ivTag.setVisibility(View.VISIBLE);//未投

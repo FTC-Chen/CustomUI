@@ -37,8 +37,8 @@ public class PreviousVoteAdapter extends MyBaseAdapter<Data> {
 		
 		Data data=getItem(position);
 		vh.tvTitle.setText(data.getSubject());
-		vh.tvCreateTime.setText("��ʼʱ�䣺"+data.getCreateDate());
-		vh.tvEndTime.setText("����ʱ�䣺"+data.getDeadline());
+		vh.tvCreateTime.setText("开始时间:"+data.getCreateDate());
+		vh.tvEndTime.setText("结束时间:"+data.getDeadline());
 		if(data.isHasVoted()){
 			vh.ivTag.setVisibility(View.VISIBLE);
 		}else{

@@ -71,7 +71,7 @@ public class CurrentVoteFragment extends Fragment {
 			@Override
 			public void onLoadMore() {
 				pageNumber++;
-				//refresh();
+				refresh();
 				listview.stopLoadMore();
 				
 			}
@@ -83,6 +83,7 @@ public class CurrentVoteFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
+				
 				CurrentVote.Data currvote=mAdapter.getItem(position-1);
 				Intent intent=new Intent(getActivity(),VoteExplainActivity.class );
 				intent.putExtra("from", "current");
@@ -100,7 +101,6 @@ public class CurrentVoteFragment extends Fragment {
 		});
 		
 	}
-	
 
 	@Override
 	public void onResume() {
@@ -116,8 +116,6 @@ public class CurrentVoteFragment extends Fragment {
 			Toast.makeText(getActivity(), "当前网络不可用", 1).show();
 			return;
 		}
-		
-		
 		HttpUtil.getCurrentVoteList(Myapp.loginUser.getData().getId(), pageNumber, pageSize, new onCurrentVoteFinishListener() {
 
 			@Override

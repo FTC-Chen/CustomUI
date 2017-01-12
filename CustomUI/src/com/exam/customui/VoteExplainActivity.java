@@ -66,11 +66,11 @@ public class VoteExplainActivity extends BaseActivity {
 		createUserId=getIntent().getIntExtra("CreateUserId", 0);
 		hasVoted=getIntent().getBooleanExtra("HasVoted",true);
 		
-		tvTitle.setText(subject+"\nͶƱ˵��");
+		tvTitle.setText(subject+"\n相关说明");
 		tvDescription.setText(description);
-		tvCreateTime.setText("��ʼʱ�䣺"+createTime);
-		tvDeadTime.setText("����ʱ�䣺"+deadLine);
-		tvMustSeleted.setText("ÿ��"+mustSeleted+"Ʊ");
+		tvCreateTime.setText("开始时间:"+createTime);
+		tvDeadTime.setText("结束时间:"+deadLine);
+		tvMustSeleted.setText("每人"+mustSeleted+"票");
 
 		if(from.equals("current")){
 			Log.d("TAG", from);

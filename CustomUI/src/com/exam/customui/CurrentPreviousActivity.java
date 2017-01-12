@@ -2,7 +2,6 @@ package com.exam.customui;
 
 import com.exam.customui.R;
 
-
 import com.exam.adapter.VotePagerAdapter;
 
 import android.app.Activity;

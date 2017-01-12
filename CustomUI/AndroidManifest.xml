@@ -12,8 +12,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name="com.exam.app.Myapp"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         <activity
@@ -56,6 +57,10 @@
         <activity
             android:name=".VoteSelectActivity"
             android:label="@string/title_activity_vote_select" >
+        </activity>
+        <activity
+            android:name=".CandidateActivity"
+            android:label="@string/title_activity_candidate" >
         </activity>
     </application>
 

@@ -1,10 +1,12 @@
 package com.exam.app;
 
 import com.android.volley.RequestQueue;
+
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 import com.android.volley.toolbox.ImageLoader.ImageListener;
+
 import com.exam.bean.LoginUser;
 import com.exam.customui.R;
 
@@ -12,7 +14,6 @@ import android.app.Application;
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;
 import android.widget.ImageView;
-
 
 
 public class Myapp extends Application {
